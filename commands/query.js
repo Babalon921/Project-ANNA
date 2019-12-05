@@ -252,7 +252,7 @@ module.exports.run = async(_bot,msg,args)=>{
 
 else{
   if(msg.member.roles.find(r1 => r1.name === "Theta Clearance")){
-  Entry.findOne({ $and: [ { title:args.join(" ") }, { c1: true }] }, 'info title thub uid c1 c2 c3 c4 ', function (etheta, theta) {
+  Entry.findOne({ $and: [ { title:args.join(" ") }, { c1: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (etheta, theta) {
   try{
   console.log("theta")
   var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
@@ -286,7 +286,7 @@ else{
   })}
 
 else if(msg.member.roles.find(r2 => r2.name === "Delta Clearance")){
-    Entry.findOne({ $and: [ { title:args.join(" ") }, { c2: true }] }, 'info title thub uid c1 c2 c3 c4 ', function (edelta, delta) {
+    Entry.findOne({ $and: [ { title:args.join(" ") }, { c2: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (edelta, delta) {
       try{
       var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
       var fot2 = " level personnel and up only"
@@ -318,7 +318,7 @@ else if(msg.member.roles.find(r2 => r2.name === "Delta Clearance")){
   }
 })}
 else if(msg.member.roles.find(r3 => r3.name === "Omega Clearance")){
-  Entry.findOne({ $and: [ { title:args.join(" ") }, { c3: true }] }, 'info title thub uid c1 c2 c3 c4 ', function (eomega, omega) {
+  Entry.findOne({ $and: [ { title:args.join(" ") }, { c3: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (eomega, omega) {
     try{
     var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
     var fot2 = " level personnel and up only"
@@ -349,7 +349,7 @@ else if(msg.member.roles.find(r3 => r3.name === "Omega Clearance")){
 }
 })}
 else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
-  Entry.findOne({ $and: [ { title:args.join(" ") }, { c4: true }] }, 'info title thub uid c1 c2 c3 c4 ', function (eorigin, origin) {
+  Entry.findOne({ $and: [ { title:args.join(" ") }, { c4: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (eorigin, origin) {
     try{
     var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
     var fot2 = " level personnel and up only"
