@@ -1,0 +1,23 @@
+{
+  "name": "project-anna",
+  "version": "2.0.0",
+  "description": "discordbot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "babalon921",
+  "license": "ISC",
+  "dependencies": {
+    "anti-spam": "^0.2.7",
+    "better-sqlite3": "^5.4.2",
+    "delay": "^4.3.0",
+    "discord.js": "^11.5.1",
+    "mongoose": "^5.7.13",
+    "random-puppy": "^1.1.0",
+    "snekfetch": "^4.0.4"
+  }
+}
