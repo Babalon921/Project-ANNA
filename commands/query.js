@@ -382,7 +382,7 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
     }).catch(err => console.log(err));
     }
     else if(msg.member.roles.find(r5 => r5.name === "Grey Clearance")){
-      Entry.findOne({ $and: [ { title:args.join(" ") }, { c5: true }] }, 'info title thub uid c1 c2 c3 c4 ', function (egrey, grey) {
+      Entry.findOne({ $and: [ { title:args.join(" ") }, { c5: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (egrey, grey) {
         try{
         if(egrey){return console.log(egrey)}
 
@@ -405,6 +405,34 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
                   console.log(e)
                   setTimeout(function() {
                   msg.channel.send("Error! FELT CODEX Title Invalid!")
+                  return;
+                    }, 10000);
+    }
+    })}
+    else if(msg.member.roles.find(r5 => r5.name === "White Clearance")){
+      Entry.findOne({ $and: [ { title:args.join(" ") }, { c8: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (ewhite, white) {
+        try{
+        if(egrey){return console.log(egrey)}
+
+        var out3 = new Discord.RichEmbed()
+        .setTitle(white.title)
+        .setDescription(white.info)
+        .setAuthor("CGT CODEX ID "+grey.uid+":")
+        .setThumbnail(grey.thub)
+        .setColor("#ff0000")
+        .setTimestamp()
+        .setFooter("This Codex entry is the property of the CGT. and was compiled by the PKT, It is authorizd to White clearance members only.", 'https://cdn.discordapp.com/attachments/458417860058939403/636389138899402783/CGT.png', 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+          msg.channel.send(gettinginfo)
+
+          setTimeout(function() {
+          msg.channel.send(out3)
+          return;
+            }, 10000);
+          }catch(e){
+            msg.channel.send(gettinginfo)
+                  console.log(e)
+                  setTimeout(function() {
+                  msg.channel.send("Error! CGT CODEX Title Invalid!")
                   return;
                     }, 10000);
     }

@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 let mongoose = require("mongoose")
-mongoose.connect('mongodb+srv://user:user1242@project-anna-5ycet.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://codex:V4JcXtMkIIIY4UGK@roc-lyt4h.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
 const Entry = require("../module/entry.js")
 
 
