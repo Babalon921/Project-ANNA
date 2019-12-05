@@ -409,7 +409,7 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
                     }, 10000);
     }
     })}
-    else if(msg.member.roles.find(r5 => r5.name === "White Clearance")){
+    else if(msg.member.roles.find(r6 => r5.name === "White Clearance")){
       Entry.findOne({ $and: [ { title:args.join(" ") }, { c8: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (ewhite, white) {
         try{
         if(egrey){return console.log(egrey)}
