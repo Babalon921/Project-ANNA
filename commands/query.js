@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 let mongoose = require("mongoose")
-mongoose.connect('mongodb+srv://user:user1242@project-anna-5ycet.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://codex:V4JcXtMkIIIY4UGK@roc-lyt4h.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
 const Entry = require("../module/entry.js")
 
 var gettinginfo = new Discord.RichEmbed()
@@ -409,7 +409,7 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
                     }, 10000);
     }
     })}
-    else if(msg.member.roles.find(r6 => r5.name === "White Clearance")){
+    else if(msg.member.roles.find(r6 => r6.name === "White Clearance")){
       Entry.findOne({ $and: [ { title:args.join(" ") }, { c8: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (ewhite, white) {
         try{
         if(egrey){return console.log(egrey)}
