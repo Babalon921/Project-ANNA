@@ -251,7 +251,7 @@ module.exports.run = async(_bot,msg,args)=>{
 
 
 else{
-  if(msg.member.roles.find(r1 => r1.name === "Theta Clearance")){
+  if(msg.member.roles.find(r => r.name === "Theta Clearance")){
   Entry.findOne({ $and: [ { title:args.join(" ") }, { c1: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (etheta, theta) {
   try{
   console.log("theta")
@@ -285,7 +285,7 @@ else{
 
   })}
 
-else if(msg.member.roles.find(r2 => r2.name === "Delta Clearance")){
+else if(msg.member.roles.find(r => r.name === "Delta Clearance")){
     Entry.findOne({ $and: [ { title:args.join(" ") }, { c2: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (edelta, delta) {
       try{
       var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
@@ -317,7 +317,7 @@ else if(msg.member.roles.find(r2 => r2.name === "Delta Clearance")){
 
   }
 })}
-else if(msg.member.roles.find(r3 => r3.name === "Omega Clearance")){
+else if(msg.member.roles.find(r => r.name === "Omega Clearance")){
   Entry.findOne({ $and: [ { title:args.join(" ") }, { c3: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (eomega, omega) {
     try{
     var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
@@ -348,7 +348,7 @@ else if(msg.member.roles.find(r3 => r3.name === "Omega Clearance")){
                 }, 10000);
 }
 })}
-else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
+else if(msg.member.roles.find(r => r.name === "Origin Clearance")){
   Entry.findOne({ $and: [ { title:args.join(" ") }, { c4: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (eorigin, origin) {
     try{
     var fot1 = "This eternal codex entry is brought to you by the PKT. This entry has been authorized to "
@@ -381,7 +381,7 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
     }
     }).catch(err => console.log(err));
     }
-    else if(msg.member.roles.find(r5 => r5.name === "Grey Clearance")){
+    else if(msg.member.roles.find(r => r.name === "Grey Clearance")){
       Entry.findOne({ $and: [ { title:args.join(" ") }, { c5: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (egrey, grey) {
         try{
         if(egrey){return console.log(egrey)}
@@ -409,7 +409,7 @@ else if(msg.member.roles.find(r4 => r4.name === "Origin Clearance")){
                     }, 10000);
     }
     })}
-    else if(msg.member.roles.find(r6 => r6.name === "White Clearance")){
+    else if(msg.member.roles.find(r => r.name === "White Clearance")){
       Entry.findOne({ $and: [ { title:args.join(" ") }, { c8: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (ewhite, white) {
         try{
         if(egrey){return console.log(egrey)}
