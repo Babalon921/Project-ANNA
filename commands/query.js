@@ -251,7 +251,10 @@ module.exports.run = async(_bot,msg,args)=>{
 
 
 else{
-  if(msg.member.roles.find(r => r.name === "Theta Clearance")){
+  //iSSUE IS FINDONE DOENS'T FIND CORRECT ONE SO ALL VARS ARE NULL THIS DOESNT HELP THAT ITS ONLY CHECKS ROLES AT "A" WHICH CONFILTS IF THE USER HAS MUTI ROLES EX. THETA & OMEGA (it will skip omega and go to theta)
+  //FIX make sure the user doesnt have muti roles and if i was to fix this i would make a function that checks for muti roles then return the highest clearance which it then will find with the title given etc
+  //FIX first fix find one before checking roles for clearance $and could be a issue and try to find out about the operators $and $or $eq etc to find the matching one that can be used to find the correct one
+  if(msg.member.roles.find(r => r.name === "Theta Clearance")){ //"A"
   Entry.findOne({ $and: [ { title:args.join(" ") }, { c1: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (etheta, theta) {
   try{
   console.log("theta")
@@ -412,7 +415,7 @@ else if(msg.member.roles.find(r => r.name === "Origin Clearance")){
     else if(msg.member.roles.find(r => r.name === "White Clearance")){
       Entry.findOne({ $and: [ { title:args.join(" ") }, { c8: true }] }, 'info title thub uid c1 c2 c3 c4 c5 c6 c7 c8', function (ewhite, white) {
         try{
-        if(egrey){return console.log(egrey)}
+        if(ewhite){return console.log(ewhite)}
 
         var out3 = new Discord.RichEmbed()
         .setTitle(white.title)

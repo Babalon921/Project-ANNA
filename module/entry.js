@@ -4,7 +4,7 @@ var major = { w: "majority", wtimeout: 10000 };
 
 const entrySchema = mongoose.Schema({
     uid: Number,
-    title:  String,
+    title: String,
     info: String,
     thub: String,
     c1:Boolean,
