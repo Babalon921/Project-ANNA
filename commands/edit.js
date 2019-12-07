@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 let mongoose = require("mongoose")
-mongoose.connect('mongodb+srv://user:user1242@project-anna-5ycet.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://codex:V4JcXtMkIIIY4UGK@roc-lyt4h.mongodb.net/dbdata?retryWrites=true&w=majority/', {useNewUrlParser: true});
 const Entry = require("../module/entry.js")
 var nocando = new Discord.RichEmbed()
     .setTitle("Insufficient Permissions")
@@ -20,7 +20,7 @@ module.exports.run = async (bot,msg,args)=>{
         var hold1 = args.join(" ").replace(args[0],"")
         var hold2 = hold1.replace(args[1],"")
         var din = hold2.trim();
-        
+
         if(args[1] == "uid"){
         Entry.findOneAndUpdate({uid: args[0]}, {$set:{uid:din}}, {new: true}, (err, data) => {
             if (err){console.log(err)}
@@ -48,11 +48,11 @@ module.exports.run = async (bot,msg,args)=>{
         })}
         else{msg.channel.send("Invalid Input!")}
 
-           
+
     }finally{
         return;}};
-       
-        
+
+
 
 
 module.exports.help={
