@@ -96,7 +96,9 @@ module.exports.run = async (bot,msg,args)=>{
     c5:c5,
     c6:c6,
     c7:c7,
-    c8:c8
+    c8:c8,
+    c9:c9,
+    c10:c10
   ,
 
 
