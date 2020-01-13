@@ -14,7 +14,7 @@ var gettinginfo = new Discord.RichEmbed()
 
 module.exports.run = async(_bot,msg,args)=>{
   if(!isNaN(args.join(" "))){
-    Entry.findOne({ 'uid': args.join(" ") }, 'info title thub c1 c2 c3 c4 c5 c6 c7 c8', function (err, data){
+    Entry.findOne({ 'uid': args.join(" ") }, 'info title thub c1 c2 c3 c4 c5 c6 c7 c8 c9 c10', function (err, data){
 
         if(err){return;}
 
@@ -303,7 +303,7 @@ module.exports.run = async(_bot,msg,args)=>{
   ///Num End /// start title /// endpoint
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 else {
-    Entry.findOne({ 'title': args.join(" ") }, 'info title thub c1 c2 c3 c4 c5 c6 c7 c8', function (err, data){
+    Entry.findOne({ 'title': args.join(" ") }, 'info title thub c1 c2 c3 c4 c5 c6 c7 c8 c9 c10', function (err, data){
 
         if(err){return;}
 
