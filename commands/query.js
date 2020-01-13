@@ -9,7 +9,7 @@ var gettinginfo = new Discord.RichEmbed()
 .setThumbnail("https://media.giphy.com/media/3o7WTB4o4D0O9IQVQ4/giphy.gif")
 .setColor("#0295ca")
 .setTimestamp()
-.setFooter('Project ANNA', 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+.setFooter('Project ANNA', 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 /// embed
 
 module.exports.run = async(_bot,msg,args)=>{
@@ -33,7 +33,7 @@ module.exports.run = async(_bot,msg,args)=>{
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
-              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
                 msg.channel.send(gettinginfo)
 
@@ -60,7 +60,7 @@ module.exports.run = async(_bot,msg,args)=>{
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
-              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
                 msg.channel.send(gettinginfo)
                 setTimeout(function() {
@@ -86,7 +86,7 @@ module.exports.run = async(_bot,msg,args)=>{
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
-              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
                 msg.channel.send(gettinginfo)
                 setTimeout(function() {
@@ -112,7 +112,7 @@ module.exports.run = async(_bot,msg,args)=>{
               .setThumbnail(data.thub)
               .setColor("#b200ff")
               .setTimestamp()
-              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/581163481424986112/612235645145841664/hologram-1140x641.png');
+              .setFooter(fot1+rank+fot2, 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
                 msg.channel.send(gettinginfo)
                 setTimeout(function() {
@@ -232,6 +232,60 @@ module.exports.run = async(_bot,msg,args)=>{
 
         };
      }
+     else if (data.c9 == true){
+       if(msg.member.roles.find(r => r.name === "Dark Clearance")){
+         var rank = "Dark"
+         var out = new Discord.RichEmbed()
+         .setTitle(data.title)
+         .setDescription(data.info)
+         .setAuthor("PKT Codex ID "+args.join(" "))
+         .setThumbnail(data.thub)
+         .setColor("#FDFDFD")
+         .setTimestamp()
+         .setFooter("This Codex entry is the property of the PKT. It is authorizd to Dark clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+           msg.channel.send(gettinginfo)
+           setTimeout(function() {
+           msg.channel.send(out)
+             }, 40000);
+           }
+           else{
+               msg.channel.send(gettinginfo)
+
+           setTimeout(function() {
+           msg.channel.send("I am afraid you are missing Dark clearance required for this codex entry.")
+             }, 10000);
+
+       };
+    }
+    else if (data.c10 == true){
+      if(msg.member.roles.find(r => r.name === "Celestial Clearance")){
+        var rank = "Celestial"
+        var out = new Discord.RichEmbed()
+        .setTitle(data.title)
+        .setDescription(data.info)
+        .setAuthor("PKT Codex ID "+args.join(" "))
+        .setThumbnail(data.thub)
+        .setColor("#FDFDFD")
+        .setTimestamp()
+        .setFooter("This Codex entry is the property of the PKT. It is authorizd to Celestial clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+          msg.channel.send(gettinginfo)
+          setTimeout(function() {
+          msg.channel.send(out)
+            }, 40000);
+          }
+          else{
+              msg.channel.send(gettinginfo)
+
+          setTimeout(function() {
+          msg.channel.send("I am afraid you are missing Celestial clearance required for this codex entry.")
+            }, 10000);
+
+      };
+   }
+
+
 
         else(msg.channel.send("I am afraid you haven't gained the clearance codes to access the Codex yet!"));
 
@@ -467,6 +521,59 @@ else {
 
         };
      }
+     else if (data.c9 == true){
+       if(msg.member.roles.find(r => r.name === "Dark Clearance")){
+         var rank = "Dark"
+         var out = new Discord.RichEmbed()
+         .setTitle(data.title)
+         .setDescription(data.info)
+         .setAuthor("PKT Codex ID "+args.join(" "))
+         .setThumbnail(data.thub)
+         .setColor("#FDFDFD")
+         .setTimestamp()
+         .setFooter("This Codex entry is the property of the PKT. It is authorizd to Dark clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+           msg.channel.send(gettinginfo)
+           setTimeout(function() {
+           msg.channel.send(out)
+             }, 40000);
+           }
+           else{
+               msg.channel.send(gettinginfo)
+
+           setTimeout(function() {
+           msg.channel.send("I am afraid you are missing Dark Clearance required for this codex entry")
+             }, 10000);
+
+       };
+    }
+    else if (data.c10 == true){
+      if(msg.member.roles.find(r => r.name === "Celestial Clearance")){
+        var rank = "Celestial"
+        var out = new Discord.RichEmbed()
+        .setTitle(data.title)
+        .setDescription(data.info)
+        .setAuthor("PKT Codex ID "+args.join(" "))
+        .setThumbnail(data.thub)
+        .setColor("#FDFDFD")
+        .setTimestamp()
+        .setFooter("This Codex entry is the property of the PKT. It is authorizd to Celestial clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+          msg.channel.send(gettinginfo)
+          setTimeout(function() {
+          msg.channel.send(out)
+            }, 40000);
+          }
+          else{
+              msg.channel.send(gettinginfo)
+
+          setTimeout(function() {
+          msg.channel.send("I am afraid you are missing Celestial Clearance required for this codex entry")
+            }, 10000);
+
+      };
+   }
+
 
         else(msg.channel.send("I am afraid you haven't gained the clearance codes to access the Codex yet!"));
 

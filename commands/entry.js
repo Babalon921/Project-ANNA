@@ -62,6 +62,12 @@ module.exports.run = async (bot,msg,args)=>{
     else if(clearance == "c8"){
       var c8 = true
     }
+    else if(clearance == "c9"){
+      var c9 = true
+    }
+    else if(clearance == "c10"){
+      var c10 = true
+    }
     else{return msg.channel.send("Invalid Input!")}
 
     const filter = m => m.author.id === msg.author.id;
