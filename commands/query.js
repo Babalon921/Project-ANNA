@@ -427,7 +427,7 @@ else {
              .setThumbnail(data.thub)
              .setColor("#ff0000")
              .setTimestamp()
-             .setFooter("This Codex entry is the property of The Multiverse. and was compiled by the PKT, It is authorizd to Grey clearance members only.", 'https://cdn.discordapp.com/attachments/548681901418741762/636338793611264011/JPEG_20190708_0246333.jpg');
+             .setFooter("This Codex entry is the property of The Multiverse. and was compiled by the PKT, It is authorizd to Grey clearance members only.", 'https://cdn.discordapp.com/attachments/548681901418741762/665767871707611169/Logopit_1578801813663.png');
 
                msg.channel.send(gettinginfo)
                setTimeout(function() {
