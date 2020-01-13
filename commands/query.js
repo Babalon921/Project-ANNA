@@ -318,7 +318,7 @@ else {
               var out = new Discord.RichEmbed()
               .setTitle(data.title)
               .setDescription(data.info)
-              .setAuthor("Eternal Codex ID "+args.join(" "))
+              .setAuthor("Eternal Codex Entry ID "+args.join(" "))
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
@@ -345,7 +345,7 @@ else {
               var out = new Discord.RichEmbed()
               .setTitle(data.title)
               .setDescription(data.info)
-              .setAuthor("Eternal Codex ID "+args.join(" "))
+              .setAuthor("Eternal Codex Entry ID "+args.join(" "))
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
@@ -371,7 +371,7 @@ else {
               var out = new Discord.RichEmbed()
               .setTitle(data.title)
               .setDescription(data.info)
-              .setAuthor("Eternal Codex ID "+args.join(" "))
+              .setAuthor("Eternal Codex Entry ID "+args.join(" "))
               .setThumbnail(data.thub)
               .setColor("#00eeff")
               .setTimestamp()
@@ -397,7 +397,7 @@ else {
               var out = new Discord.RichEmbed()
               .setTitle(data.title)
               .setDescription(data.info)
-              .setAuthor("Eternal Codex ID "+args.join(" "))
+              .setAuthor("Eternal Codex Entry ID "+args.join(" "))
               .setThumbnail(data.thub)
               .setColor("#b200ff")
               .setTimestamp()
@@ -423,11 +423,11 @@ else {
              var out = new Discord.RichEmbed()
              .setTitle(data.title)
              .setDescription(data.info)
-             .setAuthor("FELT Codex ID "+args.join(" "))
+             .setAuthor("Multiverse Codex Entry ID "+args.join(" "))
              .setThumbnail(data.thub)
              .setColor("#ff0000")
              .setTimestamp()
-             .setFooter("This Codex entry is the property of FELT Inc. and was compiled by the PKT, It is authorizd to Grey clearance members only.", 'https://cdn.discordapp.com/attachments/548681901418741762/636338793611264011/JPEG_20190708_0246333.jpg');
+             .setFooter("This Codex entry is the property of The Multiverse. and was compiled by the PKT, It is authorizd to Grey clearance members only.", 'https://cdn.discordapp.com/attachments/548681901418741762/636338793611264011/JPEG_20190708_0246333.jpg');
 
                msg.channel.send(gettinginfo)
                setTimeout(function() {
@@ -438,7 +438,7 @@ else {
                    msg.channel.send(gettinginfo)
 
                setTimeout(function() {
-               msg.channel.send("I am afraid you are missing Grey clearance required for FELT codex entries!")
+               msg.channel.send("I am afraid you are missing Grey clearance required for Multiverse codex entries!")
                  }, 10000);
 
            };
@@ -449,7 +449,7 @@ else {
             var out = new Discord.RichEmbed()
             .setTitle(data.title)
             .setDescription(data.info)
-            .setAuthor("SEST Codex ID "+args.join(" "))
+            .setAuthor("SEST Codex Entry ID "+args.join(" "))
             .setThumbnail(data.thub)
             .setColor("#00eeff")
             .setTimestamp()
@@ -475,7 +475,7 @@ else {
            var out = new Discord.RichEmbed()
            .setTitle(data.title)
            .setDescription(data.info)
-           .setAuthor("MT Codex ID "+args.join(" "))
+           .setAuthor("MT Codex Entry ID "+args.join(" "))
            .setThumbnail(data.thub)
            .setColor("#0295ca")
            .setTimestamp()
@@ -501,7 +501,7 @@ else {
           var out = new Discord.RichEmbed()
           .setTitle(data.title)
           .setDescription(data.info)
-          .setAuthor("CGT Codex ID "+args.join(" "))
+          .setAuthor("CGT Codex Entry ID "+args.join(" "))
           .setThumbnail(data.thub)
           .setColor("#FDFDFD")
           .setTimestamp()
@@ -527,7 +527,7 @@ else {
          var out = new Discord.RichEmbed()
          .setTitle(data.title)
          .setDescription(data.info)
-         .setAuthor("PKT Codex ID "+args.join(" "))
+         .setAuthor("Eternal Codex Entry ID "+args.join(" "))
          .setThumbnail(data.thub)
          .setColor("#FDFDFD")
          .setTimestamp()
@@ -553,7 +553,7 @@ else {
         var out = new Discord.RichEmbed()
         .setTitle(data.title)
         .setDescription(data.info)
-        .setAuthor("PKT Codex ID "+args.join(" "))
+        .setAuthor("Eternal Codex Entry ID "+args.join(" "))
         .setThumbnail(data.thub)
         .setColor("#FDFDFD")
         .setTimestamp()
