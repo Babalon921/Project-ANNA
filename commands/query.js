@@ -536,7 +536,7 @@ else {
            msg.channel.send(gettinginfo)
            setTimeout(function() {
            msg.channel.send(out)
-             }, 40000);
+         }, 90000);
            }
            else{
                msg.channel.send(gettinginfo)
@@ -562,7 +562,7 @@ else {
           msg.channel.send(gettinginfo)
           setTimeout(function() {
           msg.channel.send(out)
-            }, 40000);
+            }, 180000);
           }
           else{
               msg.channel.send(gettinginfo)
