@@ -16,7 +16,9 @@ const entrySchema = mongoose.Schema({
     c7:Boolean,
     c8:Boolean,
     c9:Boolean,
-    c10:Boolean, 
+    c10:Boolean,
+    c11:Boolean,
+    c12:Boolean,
 });
 entrySchema.index({title: 'text', 'info': 'text'});
 

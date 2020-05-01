@@ -284,6 +284,32 @@ module.exports.run = async(_bot,msg,args)=>{
 
       };
    }
+   else if (data.c11 == true){
+     if(msg.member.roles.find(r => r.name === "Elemental Clearance")){
+       var rank = "Elemental"
+       var out = new Discord.RichEmbed()
+       .setTitle(data.title)
+       .setDescription(data.info)
+       .setAuthor("PC Codex ID "+args.join(" "))
+       .setThumbnail(data.thub)
+       .setColor("#FDFDFD")
+       .setTimestamp()
+       .setFooter("This Codex entry is the property of Phoenix Corps. It is authorizd to Elemental clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+         msg.channel.send(gettinginfo)
+         setTimeout(function() {
+         msg.channel.send(out)
+           }, 40000);
+         }
+         else{
+             msg.channel.send(gettinginfo)
+
+         setTimeout(function() {
+         msg.channel.send("I am afraid you are missing Elemental clearance required for this codex entry.")
+           }, 10000);
+
+     };
+  }
 
 
 
@@ -531,7 +557,7 @@ else {
          .setThumbnail(data.thub)
          .setColor("#FDFDFD")
          .setTimestamp()
-         .setFooter("This Codex entry is the property of the PKT. It is authorizd to Dark clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+         .setFooter("This Codex entry is the property of the Phoenix Corp. It is authorizd to Dark clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
            msg.channel.send(gettinginfo)
            setTimeout(function() {
@@ -557,7 +583,7 @@ else {
         .setThumbnail(data.thub)
         .setColor("#FDFDFD")
         .setTimestamp()
-        .setFooter("This Codex entry is the property of the PKT. It is authorizd to Celestial clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+        .setFooter("This Codex entry is the property of Phoenix Corp. It is authorized to Celestial clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
 
           msg.channel.send(gettinginfo)
           setTimeout(function() {
@@ -573,6 +599,57 @@ else {
 
       };
    }
+   else if (data.c11 == true){
+     if(msg.member.roles.find(r => r.name === "Elemental Clearance")){
+       var rank = "Elemental"
+       var out = new Discord.RichEmbed()
+       .setTitle(data.title)
+       .setDescription(data.info)
+       .setAuthor("Eternal Codex Entry ID "+args.join(" "))
+       .setThumbnail(data.thub)
+       .setColor("#FDFDFD")
+       .setTimestamp()
+       .setFooter("This Codex entry is the property of Phoenix Corps. It is authorized to Elemental clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+         msg.channel.send(gettinginfo)
+         setTimeout(function() {
+         msg.channel.send(out)
+           }, 180000);
+         }
+         else{
+             msg.channel.send(gettinginfo)
+
+         setTimeout(function() {
+         msg.channel.send("I am afraid you are missing Elemental Clearance required for this codex entry")
+           }, 10000);
+
+     };
+  }
+  else if (data.c12 == true){
+    if(msg.member.roles.find(r => r.name === "Metaversal Clearance")){
+      var rank = "Metaversal"
+      var out = new Discord.RichEmbed()
+      .setTitle(data.title)
+      .setDescription(data.info)
+      .setAuthor("Eternal Codex Entry ID "+args.join(" "))
+      .setThumbnail(data.thub)
+      .setColor("#FDFDFD")
+      .setTimestamp()
+      .setFooter("This Codex entry is the property of REDACTED. It is authorized to Metaversal clearance members only.", 'https://cdn.discordapp.com/attachments/665367731578601511/666129331231391755/PKTT.png');
+
+        msg.channel.send(gettinginfo)
+        setTimeout(function() {
+        msg.channel.send(out)
+          }, 180000);
+        }
+        else{
+            msg.channel.send(gettinginfo)
+
+        setTimeout(function() {
+        msg.channel.send("I am afraid you are missing Metaversal Clearance required for this codex entry")
+          }, 10000);
+
+    };
 
 
         else(msg.channel.send("I am afraid you haven't gained the clearance codes to access the Codex yet!"));
