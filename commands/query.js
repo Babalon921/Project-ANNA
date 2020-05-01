@@ -650,7 +650,7 @@ else {
           }, 10000);
 
     };
-
+}
 
         else(msg.channel.send("I am afraid you haven't gained the clearance codes to access the Codex yet!"));
 
